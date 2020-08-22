@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |spec|
   spec.name         = "StravaLoginSDK"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "Provide strava authorization function to use strava api"
   spec.homepage     = "https://github.com/fjswrk/strava-login-ios"
   spec.license      = { :type => "MIT", :file => "LICENSE" }
