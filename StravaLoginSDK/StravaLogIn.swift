@@ -245,7 +245,7 @@ public class StravaLogIn: NSObject {
             case .responseType: return URLQueryItem(name: queryNameString, value: responseType)
             case .approvalPrompt: return URLQueryItem(name: queryNameString, value: approvalPrompt?.rawValue)
             case .code(let value): return URLQueryItem(name: queryNameString, value: value)
-            case .scope: return URLQueryItem(name: queryNameString, value: scope?.map { $0.rawValue }.joined())
+            case .scope: return URLQueryItem(name: queryNameString, value: scope?.map { $0.rawValue }.joined(separator: ","))
             case .state: return URLQueryItem(name: queryNameString, value: state)
             case .refreshToken: return URLQueryItem(name: queryNameString, value: currentCredential?.refreshToken)
             case .accessToken: return URLQueryItem(name: queryNameString, value: currentCredential?.accessToken)
